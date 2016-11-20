@@ -4,6 +4,7 @@ from PIL import ImageFont
 
 
 fileName=input("Name of file to be watermarked...")
+myText=input("Text of the watermark...")
 posX=int(input("X position of text..."))
 posY=int(input("Y position of text..."))
 img = Image.open(fileName)
@@ -16,5 +17,5 @@ d = ImageDraw.Draw(img)
 ##fonts_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'fonts')
 ##font = ImageFont.truetype(os.path.join(fonts_path, 'sans_serif.ttf'), 24)
 
-d.text((posX, posY),"Sample Text",(255,255,255))
+d.text((posX, posY),myText,(255,255,255))
 img.save('result.jpg')
