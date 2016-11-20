@@ -31,7 +31,7 @@ for i in range(wm.size[0]):
         if r!=255 and g!=255 and b!=255:
             #changer la valeur du pixel a la position (i,j)
             #dans l image destination en la valeur du watermark
-            #ici on a choisi la couleur bleu clair R=0 G=127 B=255
+            #ici on a choisi la couleur bleu clair (R=0 G=127 B=255)
             im2.putpixel((i,j),(0,127,255))
 im2.show()
 im2.save("result.jpg")
