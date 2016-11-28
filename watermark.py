@@ -1,4 +1,4 @@
-#for Nael N.P. Prelaz
+#script for Nael N.P. Prelaz
 from PIL import Image
 import sys
 import numpy as np
